@@ -2,19 +2,19 @@
 
 # MacOS用プロジェクトセットアップスクリプト
 
-# プロジェクト名を入力
-read -p "Enter project name: " PROJECT_NAME
-if [ -z "$PROJECT_NAME" ]; then
-    echo "Project name cannot be empty. Exiting."
-    exit 1
-fi
+# # プロジェクト名を入力
+# read -p "Enter project name: " PROJECT_NAME
+# if [ -z "$PROJECT_NAME" ]; then
+#     echo "Project name cannot be empty. Exiting."
+#     exit 1
+# fi
 
-# プロジェクトディレクトリ作成
-echo "Creating project directory..."
-mkdir -p "$PROJECT_NAME"/{src,tests,docs,.vscode}
+# # プロジェクトディレクトリ作成
+# echo "Creating project directory..."
+# mkdir -p "$PROJECT_NAME"/{src,tests,docs,.vscode}
 
-# ディレクトリ内に移動
-cd "$PROJECT_NAME" || exit
+# # ディレクトリ内に移動
+# cd "$PROJECT_NAME" || exit
 
 # README.md と .gitignore を作成
 echo "Creating README.md and .gitignore..."
